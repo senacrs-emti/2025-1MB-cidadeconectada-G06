@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Religiões em Conexão</title>
+    <link rel="stylesheet" type="text/css" href="./estiloreligiões.css">
+    <style>
+        :root{
+            --bg:#f7f9fc; --card:#fff; --accent:#2b6cb0; --muted:#556;
+            --radius:10px; --gap:1rem;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+        body{margin:0;background:var(--bg);color:var(--muted);line-height:1.5}
+        header{background:linear-gradient(90deg,#fff 0%, #f0f6ff 100%);padding:2rem 1rem;border-bottom:1px solid #e6eef8}
+        .container{max-width:1100px;margin:0 auto;padding:1rem}
+        h1{margin:0;color:var(--accent);font-size:clamp(1.25rem,3vw,2rem)}
+        p.lead{margin-top:.5rem;color:#344;max-width:60ch}
+        nav{margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap}
+        nav a{background:transparent;border:1px solid #d3e3fb;padding:.4rem .7rem;border-radius:999px;color:var(--accent);text-decoration:none;font-size:.9rem}
+        main{padding:1rem}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--gap)}
+        .card{background:var(--card);padding:1rem;border-radius:var(--radius);box-shadow:0 6px 18px rgba(30,60,100,.06);border:1px solid rgba(30,60,100,.04)}
+        h2{margin:.2rem 0 .6rem 0;color:#143c63;font-size:1.05rem}
+        .meta{font-size:.85rem;color:#657; margin-bottom:.6rem}
+        .btn{display:inline-block;background:var(--accent);color:white;padding:.45rem .6rem;border-radius:8px;text-decoration:none;font-size:.9rem;border:none;cursor:pointer}
+        footer{padding:1.2rem;border-top:1px solid #e6eef8;margin-top:1rem;color:#556;text-align:center;background:transparent}
+        .hidden{display:none}
+        img.icon{width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:.6rem}
+        @media (prefers-color-scheme:dark){
+            :root{--bg:#071129;--card:#071829;--accent:#66b3ff;--muted:#cbd7e6}
+            header{border-bottom-color:#062136}
+            footer{border-top-color:#062136}
+        }
+    </style>
+</head>
+<body>
+    <header role="banner">
+        <div class="container">
+            <h1>Religiões em Conexão</h1>
+            <p class="lead">
+                Nosso projeto tem como propósito promover o respeito, a empatia e a compreensão entre diferentes crenças e tradições religiosas. Em uma sociedade cada vez mais diversa, ainda é comum a existência de preconceitos e desinformações que geram intolerância, desrespeito e conflitos. Por meio deste projeto, buscamos apresentar as principais religiões e filosofias espirituais de forma clara e didática, destacando suas origens, fundamentos e valores éticos. Assim, pretendemos incentivar o diálogo inter-religioso e contribuir para uma convivência mais harmônica, pautada no conhecimento, na tolerância, respeito e no reconhecimento da diversidade cultural e espiritual presente em nosso mundo.
+            </p>
+
+            <nav aria-label="Seções do projeto">
+                <a href="#introducao">Introdução</a>
+                <a href="#principais">Principais Tradições</a>
+                <a href="#recursos">Recursos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" role="main">
+        <section id="introducao" class="card" aria-labelledby="intro-title">
+            <h2 id="intro-title">Por que este projeto?</h2>
+            <p class="meta">Educação, diálogo e convivência — princípios que guiam nosso trabalho.</p>
+            <p>Apresentamos informações factuais e respeitosas sobre crenças e práticas, com o objetivo de combater desinformação e promover compreensão mútua. O conteúdo é introdutório e pensado para escolas, comunidades e espaços de diálogo.</p>
+        </section>
+
+        <section id="principais" style="margin-top:1rem">
+            <h2 style="margin-bottom:.6rem">Principais tradições (resumo)</h2>
+            <div class="grid">
+                <article class="card" aria-labelledby="crt">
+                    <img class="icon" src="./34595032-conceito-ou-conceptual-madeira-cruz-ou-religiao-simbolo-forma-sobre-uma-por-do-sol-ceu-fundo-bandeira-ai-gerado-foto.jpg" alt="Símbolo do Cristianismo — imagem ilustrativa">
+                    <h3 id="crt">Cristianismo</h3>
+                    <p class="meta">Origem: Século I, Oriente Médio</p>
+                    <p>Fundamentos: Fé em Jesus Cristo, Bíblia, ética do amor e perdão. Valor central: compaixão e cuidado com o próximo.</p>
+                    <button class="btn" data-target="more-crt">Leia mais</button>
+                    <div id="more-crt" class="hidden">
+                        <p>Tradições variadas (catolicismo, ortodoxia, protestantismo) com práticas litúrgicas e ênfases teológicas distintas.</p>
+                    </div>
+                </article>
+
+                <article class="card" aria-labelledby="isl">
+                    <img class="icon" src="./973e1961e267466c2cfcc51ca837287e.jpg" alt="Símbolo do Islamismo — imagem ilustrativa">
+                    <h3 id="isl">Islamismo</h3>
+                    <p class="meta">Origem: Século VII, Península Arábica</p>
+                    <p>Fundamentos: Profeta Maomé, Alcorão, cinco pilares (fé, oração, caridade, jejum, peregrinação). Valor central: submissão a Deus e justiça social.</p>
+                    <button class="btn" data-target="more-isl">Leia mais</button>
+                    <div id="more-isl" class="hidden">
+                        <p>Ramos principais incluem sunismo e xiismo; diversidade cultural e jurisprudencial ampla.</p>
+                    </div>
+                </article>
+
+                <article class="card" aria-labelledby="jud">
+                    <img class="icon" src="./efca433108fc1ad5cdf8536de6a0b985.jpg" alt="Símbolo do Judaísmo — imagem ilustrativa">
+                    <h3 id="jud">Judaísmo</h3>
+                    <p class="meta">Origem: Antigo Oriente Próximo</p>
+                    <p>Fundamentos: Torá, aliança com Deus, observância de leis e rituais. Valor central: responsabilidade ética comunitária.</p>
+                    <button class="btn" data-target="more-jud">Leia mais</button>
+                    <div id="more-jud" class="hidden">
+                        <p>Tradições incluem ortodoxia, conservadorismo e reformismo; forte ênfase na memória histórica e na lei.</p>
+                    </div>
+                </article>
+
+                <article class="card" aria-labelledby="hin">
+                    <img class="icon" src="./hindu3.jpg" alt="Símbolo do Hinduísmo — imagem ilustrativa">
+                    <h3 id="hin">Hinduísmo</h3>
+                    <p class="meta">Origem: Subcontinente Indiano, muito antigo</p>
+                    <p>Fundamentos: textos védicos e diversos caminhos espirituais, reencarnação, dharma (dever). Valor central: pluralismo espiritual e práticas devocionais.</p>
+                    <button class="btn" data-target="more-hin">Leia mais</button>
+                    <div id="more-hin" class="hidden">
+                        <p>Grande variedade de crenças e rituais locais; sistemas filosóficos como Vedanta e Samkhya.</p>
+                    </div>
+                </article>
+
+                <article class="card" aria-labelledby="bud">
+                    <img class="icon" src="./buda5.jpg" alt="Imagem ilustrativa do Budismo">
+                    <h3 id="bud">Budismo</h3>
+                    <p class="meta">Origem: Século V–IV a.C., Índia</p>
+                    <p>Fundamentos: ensinamentos do Buda (Quatro Nobres Verdades, caminho óctuplo), ênfase em meditação e compaixão. Valor central: redução do sofrimento por meio da sabedoria e ética.</p>
+                    <button class="btn" data-target="more-bud">Leia mais</button>
+                    <div id="more-bud" class="hidden">
+                        <p>Tradições incluem Theravada, Mahayana e Vajrayana, cada qual com práticas meditativas e filosóficas distintas.</p>
+                    </div>
+                </article>
+
+                <article class="card" aria-labelledby="ind">
+                    <img class="icon" src="https://via.placeholder.com/600x300?text=Tradições+Ind%C3%ADgenas" alt="Imagem ilustrativa de tradições indígenas">
+                    <h3 id="ind">Jurema/Catimbó</h3>
+                    <p class="meta">Origem: Nordeste do Brasil, tradição indígena e afro-brasileira.</p>
+                    <p>Fundamentos: Uso ritual da bebida Jurema, cânticos, rezas e práticas de cura espiritual. A tradição mistura elementos indígenas, africanos e católicos, com forte ligação à natureza e aos encantados.</p>
+                    <button class="btn" data-target="more-ind">Leia mais</button>
+                    <div id="more-ind" class="hidden">
+                        <p>A Jurema é considerada uma religião de resistência cultural, preservando saberes tradicionais e práticas de cura que unem fé, plantas e rituais comunitários.</p>
+                    </div>
+                </article>
+
+                <article class="card" aria-labelledby="esp">
+                    <img class="icon" src="./" alt="Imagem ilustrativa de espiritualidades diversas">
+                    <h3 id="esp">Macumba</h3>
+                    <p class="meta">Origem: Brasil, com raízes africanas e indígenas.</p>
+                    <p>Fundamentos: Culto aos orixás, uso de tambores, oferendas, pontos cantados e rituais para proteção e equilíbrio espiritual. É uma expressão popular que engloba práticas diversas ligadas às religiões afro-brasileiras.</p>
+                    <button class="btn" data-target="more-esp">Leia mais</button>
+                    <div id="more-esp" class="hidden">
+                        <p> Apesar de muitas vezes usada de forma pejorativa, a Macumba representa um conjunto de saberes e rituais que buscam conexão com o sagrado e proteção contra energias negativas.</p>
+                    </div>
+                </article>
+
+                <article class="card" aria-labelledby="umb">
+                    <img class="icon" src="./" alt="Símbolo da Umbanda — imagem ilustrativa">
+                    <h3 id="umb">Umbanda</h3>
+                    <p class="meta">Origem: Brasil, início do século XX</p>
+                    <p>Fundamentos: Culto às forças de Exu e Pombogira, sabedoria ancestral, liberdade espiritual e justiça.</p>
+                    <button class="btn" data-target="more-umb" aria-controls="more-umb" aria-expanded="false">Leia mais</button>
+                    <div id="more-umb" class="hidden" role="region" aria-labelledby="umb">
+                        <p>A Umbanda busca harmonia entre forças espirituais e práticas de auxílio ao próximo, com rituais, cânticos e oferendas.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="recursos" class="card" style="margin-top:1rem">
+            <h2>Recursos e boas práticas</h2>
+            <ul>
+                <li>Conteúdo baseado em fontes confiáveis — encorajar referências bibliográficas locais e acadêmicas.</li>
+                <li>Evitar generalizações, respeitar variantes internas de cada tradição.</li>
+                <li>Promover atividades de escuta ativa, rodas de diálogo e oficinas inter-religiosas.</li>
+            </ul>
+        </section>
+
+        <section id="contato" class="card" style="margin-top:1rem">
+            <h2>Contato</h2>
+            <p>Quer contribuir com conteúdo, fontes ou eventos? Envie um e-mail para: <strong>religioesemconexao@gmail</strong></p>
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <div class="container">
+            <small>Religiões em Conexão — projeto educativo. Conteúdo introdutório com fins informativos.</small>
+        </div>
+    </footer>
+
+    <script>
+        // toggles for "Leia mais"
+        document.querySelectorAll('.btn[data-target]').forEach(btn=>{
+            btn.addEventListener('click', ()=>{
+                const id = btn.getAttribute('data-target');
+                const el = document.getElementById(id);
+                if(!el) return;
+                const shown = !el.classList.contains('hidden');
+                if(shown){
+                    el.classList.add('hidden');
+                    btn.textContent = 'Leia mais';
+                } else {
+                    el.classList.remove('hidden');
+                    btn.textContent = 'Mostrar menos';
+                }
+            });
+        });
+    </script>
+</body>
+</html></article></p>
