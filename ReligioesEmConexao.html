@@ -5,34 +5,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Religiões em Conexão</title>
     <link rel="stylesheet" type="text/css" href="./estiloreligiões.css">
-    <style>
-        :root{
-            --bg:#f7f9fc; --card:#fff; --accent:#2b6cb0; --muted:#556;
-            --radius:10px; --gap:1rem;
-            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-        }
-        body{margin:0;background:var(--bg);color:var(--muted);line-height:1.5}
-        header{background:linear-gradient(90deg,#fff 0%, #f0f6ff 100%);padding:2rem 1rem;border-bottom:1px solid #e6eef8}
-        .container{max-width:1100px;margin:0 auto;padding:1rem}
-        h1{margin:0;color:var(--accent);font-size:clamp(1.25rem,3vw,2rem)}
-        p.lead{margin-top:.5rem;color:#344;max-width:60ch}
-        nav{margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap}
-        nav a{background:transparent;border:1px solid #d3e3fb;padding:.4rem .7rem;border-radius:999px;color:var(--accent);text-decoration:none;font-size:.9rem}
-        main{padding:1rem}
-        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--gap)}
-        .card{background:var(--card);padding:1rem;border-radius:var(--radius);box-shadow:0 6px 18px rgba(30,60,100,.06);border:1px solid rgba(30,60,100,.04)}
-        h2{margin:.2rem 0 .6rem 0;color:#143c63;font-size:1.05rem}
-        .meta{font-size:.85rem;color:#657; margin-bottom:.6rem}
-        .btn{display:inline-block;background:var(--accent);color:white;padding:.45rem .6rem;border-radius:8px;text-decoration:none;font-size:.9rem;border:none;cursor:pointer}
-        footer{padding:1.2rem;border-top:1px solid #e6eef8;margin-top:1rem;color:#556;text-align:center;background:transparent}
-        .hidden{display:none}
-        img.icon{width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:.6rem}
-        @media (prefers-color-scheme:dark){
-            :root{--bg:#071129;--card:#071829;--accent:#66b3ff;--muted:#cbd7e6}
-            header{border-bottom-color:#062136}
-            footer{border-top-color:#062136}
-        }
-    </style>
 </head>
 <body>
     <header role="banner">
@@ -117,10 +89,10 @@
                 </article>
 
                 <article class="card" aria-labelledby="ind">
-                    <img class="icon" src="https://via.placeholder.com/600x300?text=Tradições+Ind%C3%ADgenas" alt="Imagem ilustrativa de tradições indígenas">
+                    <img class="icon" src="./jurema.jpeg" alt="Imagem ilustrativa de tradições indígenas">
                     <h3 id="ind">Jurema/Catimbó</h3>
                     <p class="meta">Origem: Nordeste do Brasil, tradição indígena e afro-brasileira.</p>
-                    <p>Fundamentos: Uso ritual da bebida Jurema, cânticos, rezas e práticas de cura espiritual. A tradição mistura elementos indígenas, africanos e católicos, com forte ligação à natureza e aos encantados.</p>
+                    <p>Fundamentos: A Jurema Sagrada/Catimbó diferencia-se por ter raízes indígenas e africanas, culto aos Mestres e Encantados (Mestres Juremeiros), uso do maracá e cachimbo (pitar), o consumo ritualístico da Jurema (bebida sagrada) e foco na cura, magia e pajelança..</p>
                     <button class="btn" data-target="more-ind">Leia mais</button>
                     <div id="more-ind" class="hidden">
                         <p>A Jurema é considerada uma religião de resistência cultural, preservando saberes tradicionais e práticas de cura que unem fé, plantas e rituais comunitários.</p>
@@ -128,8 +100,8 @@
                 </article>
 
                 <article class="card" aria-labelledby="esp">
-                    <img class="icon" src="./" alt="Imagem ilustrativa de espiritualidades diversas">
-                    <h3 id="esp">Macumba</h3>
+                    <img class="icon" src="./batuque.jpg" alt="Imagem ilustrativa de batuque">
+                    <h3 id="esp">Batuque/Nação</h3>
                     <p class="meta">Origem: Brasil, com raízes africanas e indígenas.</p>
                     <p>Fundamentos: Culto aos orixás, uso de tambores, oferendas, pontos cantados e rituais para proteção e equilíbrio espiritual. É uma expressão popular que engloba práticas diversas ligadas às religiões afro-brasileiras.</p>
                     <button class="btn" data-target="more-esp">Leia mais</button>
@@ -137,15 +109,57 @@
                         <p> Apesar de muitas vezes usada de forma pejorativa, a Macumba representa um conjunto de saberes e rituais que buscam conexão com o sagrado e proteção contra energias negativas.</p>
                     </div>
                 </article>
+                <article class="card" aria-labelledby="taoismo">
+                    <img class="icon" src="./taoismo1.jpg" alt="Símbolo do Taoísmo — imagem ilustrativa">
+                    <h3 id="taoismo">Taoísmo</h3>
+                    <p class="meta">Origem: China, século VI–IV a.C. (associado a Lao-Tsé)</p>
+                    <p>Fundamentos: Busca a harmonia com o Tao (Caminho). Princípios centrais: wu wei (não‑ação), simplicidade, equilíbrio yin‑yang, cultivo da virtude, meditação e práticas de longevidade.</p>
+                    <button class="btn" data-target="more-taoismo" aria-controls="more-taoismo" aria-expanded="false">Leia mais</button>
+                    <div id="more-taoismo" class="hidden" role="region" aria-labelledby="taoismo">
+                    <p>Textos-chave: Tao Te Ching e Zhuangzi. Engloba vertentes filosóficas e religiosas com rituais, práticas espirituais e devoção a sábios e imortais.</p>
+                    </div>
+                </article>
+
+                <article class="card" aria-labelledby="qmb">
+                    <img class="icon" src="./Quimbanda1.jpg" alt="Símbolo da Quimbanda — imagem ilustrativa">
+                    <h3 id="qmb">Quimbanda</h3>
+                    <p class="meta">Origem: É uma prática ancestral fundamentalizada em meados de 1960, e impossível datar com precisão. afro-brasileira</p>
+                    <p>Fundamentos: Culto às forças de Exu e Pombogira, sabedoria ancestral, liberdade espiritual e justiça.</p>
+                    <button class="btn" data-target="more-qmb" aria-controls="more-qmb" aria-expanded="false">Leia mais</button>
+                    <div id="more-qmb" class="hidden" role="region" aria-labelledby="qmb">
+                        <p>Tradições, práticas e contextos específicos da Quimbanda; cuidado ao generalizar.</p>
+                    </div>
+                </article>
 
                 <article class="card" aria-labelledby="umb">
-                    <img class="icon" src="./" alt="Símbolo da Umbanda — imagem ilustrativa">
+                    <img class="icon" src="./Sem título.png" alt="Símbolo da Umbanda — imagem ilustrativa">
                     <h3 id="umb">Umbanda</h3>
                     <p class="meta">Origem: Brasil, início do século XX</p>
-                    <p>Fundamentos: Culto às forças de Exu e Pombogira, sabedoria ancestral, liberdade espiritual e justiça.</p>
+                    <p>Fundamentos: A Umbanda diferencia-se por ter raízes africanas, culto aos Orixás, uso de atabaques, culto a entidades de lei, praticar a caridade e cura e ritualística ancestral (fumo, bebida e cores).</p>
                     <button class="btn" data-target="more-umb" aria-controls="more-umb" aria-expanded="false">Leia mais</button>
                     <div id="more-umb" class="hidden" role="region" aria-labelledby="umb">
                         <p>A Umbanda busca harmonia entre forças espirituais e práticas de auxílio ao próximo, com rituais, cânticos e oferendas.</p>
+                    </div>
+                </article>
+
+                <article class="card" aria-labelledby="adv">
+                    <img class="icon" src="./17c796bc7d67fdd18e9ee571bb89ba5b.jpg" alt="Símbolo da Adventista — imagem ilustrativa">
+                    <h3 id="adv">Adventista</h3>
+                    <p class="meta">Origem: Estados Unidos, século XIX (1863)</p>
+                    <p>A Igreja Adventista do Sétimo Dia baseia-se na Bíblia como única regra de fé e prática. Seus princípios incluem observância do sábado, ênfase em saúde e educação, prática da caridade e evangelismo.</p>
+                    <button class="btn" data-target="more-adv" aria-controls="more-adv" aria-expanded="false">Leia mais</button>
+                    <div id="more-adv" class="hidden" role="region" aria-labelledby="adv">
+                        <p>A denominação é conhecida por sua atuação em hospitais, escolas e projetos sociais, além de promover hábitos saudáveis.</p>
+                    </div>
+                </article>
+                <article class="card" aria-labelledby="espk">
+                    <img class="icon" src="./allan-kardec.jpg" alt="Símbolo do Espiritismo — imagem ilustrativa">
+                    <h3 id="espk">Espiritismo / Kardecismo</h3>
+                    <p class="meta">Origem: França, século XIX (Allan Kardec)</p>
+                    <p>Fundamentos: Doutrina codificada por Allan Kardec — reencarnação, comunicação com espíritos, lei de causa e efeito e aperfeiçoamento moral. Valor central: reforma íntima e prática da caridade.</p>
+                    <button class="btn" data-target="more-espk" aria-controls="more-espk" aria-expanded="false">Leia mais</button>
+                    <div id="more-espk" class="hidden" role="region" aria-labelledby="espk">
+                        <p>Atuação em centros espíritas com estudos, palestras e atividades assistenciais; ênfase em educação moral, pesquisa e auxílio ao próximo.</p>
                     </div>
                 </article>
             </div>
